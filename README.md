@@ -61,9 +61,9 @@ _printf(‘Percent: %%\n’);
 holbertonschool-printf/
 │
 ├── _printf.c
+├── func.c
 ├── main.h
-├── 
-└──README.md
+└── README.md
 ```     
 
 ---
