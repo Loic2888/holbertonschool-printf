@@ -5,6 +5,7 @@
 - [General format](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#general-format)
 - [Structure project](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#structure-project)
 - [Flowchart](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#flowchart)
+- [Installation](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#installation)
 - [Compilation](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#compilation)
 - [Documentation](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#documentation-man-page)
 - [Technologies used](https://github.com/Loic2888/holbertonschool-printf/edit/main/README.md#technologies-used)
@@ -54,7 +55,7 @@ _printf(‘Percent: %%\n’);
 ---
 
 
-##  Structure project
+## Structure project
 
 ```
 holbertonschool-printf/
@@ -68,14 +69,26 @@ holbertonschool-printf/
 ---
 
 
-##  Flowchart
+## Flowchart
 
 <a href="https://ibb.co/MxJRqX9f"><img src="https://i.ibb.co/21pjXb5S/Flowchart2-fond.png" alt="Flowchart2-fond" border="0"></a>
 
 ---
 
+## Installation
 
-##  Compilation
+- Clone this repository:
+- Open your preferred Terminal.
+- Navigate to the directory where you want to clone the repository.
+- Run the following command:
+  
+```git clone https://github.com/Loic2888/holbertonschool-printf.git```
+- Open the cloned repository.
+
+---
+
+
+## Compilation
 
 ```gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c```
 
@@ -83,7 +96,7 @@ holbertonschool-printf/
 ---
 
 
-##  Documentation (man page)
+## Documentation (man page)
 
 The complete man page can be found in the file:  
 
