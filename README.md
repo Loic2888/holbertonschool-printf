@@ -70,7 +70,7 @@ holbertonschool-printf/
 
 ##  Flowchart
 
-**flowchart ici**
+<a href="https://ibb.co/MxJRqX9f"><img src="https://i.ibb.co/21pjXb5S/Flowchart2-fond.png" alt="Flowchart2-fond" border="0"></a>
 
 ---
 
@@ -95,7 +95,18 @@ man_3_printf
 
 ## Technologies Used
 
-**image c, github, linux, windows**
+<div align="left">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" height="40" alt="c logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" height="40" alt="github logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="40" alt="linux logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" height="40" alt="windows8 logo"  />
+  <img width="12" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" height="40" alt="vscode logo"  />
+</div>
+
 
 
 ---
