@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	int i = 0, count = 0;
 	op_func func;
 
-	if (!format)
+	if (!format || (format[0] == '%' && format[1] == '\0'))
 		return (-1);
 
 	va_start(args, format);
@@ -20,11 +20,12 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			if (!format[i + 1])
+			i++;
+
+			if (!format[i])
 			{
-				_putchar('%');
-				count++;
-				break;
+				va_end(args);
+				return (-1);
 			}
 			i++;
 			func = get_op_func(format[i]);
