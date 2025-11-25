@@ -33,7 +33,7 @@ int print_string(va_list args)
 	int count = 0;
 
 	if (!str)
-		str = "(NULL)";
+		str = "(null)";
 	while (*str)
 	{
 		_putchar(*str++);
