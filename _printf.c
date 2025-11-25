@@ -22,9 +22,8 @@ int _printf(const char *format, ...)
 		{
 			if (!format[i + 1])
 			{
-				_putchar('%');
-				count++;
-				break;
+				va_end(args);
+				return (-1);
 			}
 			i++;
 			func = get_op_func(format[i]);
