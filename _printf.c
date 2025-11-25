@@ -11,7 +11,7 @@ int _printf(const char *format, ...)
 	int i = 0, count = 0;
 	op_func func;
 
-	if (!format || (format[i] == '%' && !format[i + 1]))
+	if (!format)
 		return (-1);
 
 	va_start(args, format);
