@@ -26,6 +26,7 @@ int _printf(const char *format, ...)
 				count++;
 				break;
 			}
+			i++;
 			func = get_op_func(format[i]);
 			if (func)
 			{
