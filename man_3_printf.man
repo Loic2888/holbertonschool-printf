@@ -1,0 +1,86 @@
+_PRINTF(3)                  Custom C Library                 _PRINTF(3)
+
+NAME
+       _printf - write formatted output to standard output
+
+SYNOPSIS
+       #include "main.h"
+
+       int _printf(const char *format, ...);
+
+DESCRIPTION
+       The _printf function sends formatted output to the standard
+       output (stdout) based on the format string specified by the
+       first argument.
+
+       The format string is a null-terminated array of characters
+       consisting of ordinary characters and conversion specifications
+       introduced by the '%' character.
+
+       The conversion specifications supported by _printf are:
+
+       %c
+              Prints the character corresponding to the int argument.
+
+       %s
+              Prints the null-terminated string pointed to by the
+              corresponding argument. If the argument is NULL, behavior
+              depends on the implementation (e.g., might print "(null)").
+
+       %%
+              Prints a literal '%' character. No additional argument is
+              consumed.
+
+       %d, %i
+              Prints the signed decimal integer provided as an int
+              argument.
+
+       The number and types of additional arguments must match the
+       conversion specifiers. Passing incorrect types or missing
+       arguments results in undefined behavior.
+
+RETURN VALUE
+       Upon successful completion, _printf returns the total number of
+       characters written to stdout, excluding the terminating null
+       character.
+
+       On failure (e.g., if the format string is NULL or an output error
+       occurs), the function returns a negative value (usually -1).
+
+ERRORS
+       Possible errors include:
+
+       - format string is NULL, causing _printf to fail and return -1.
+
+       - Unsupported format specifier following '%': behavior may be
+         implementation-defined.
+
+
+CONFORMITY
+       _printf is a custom implementation inspired by the standard C
+       printf function but limited to the format specifiers listed
+       above.
+
+LAST UPDATED
+       November 2025
+
+BUGS
+       This implementation supports only %c, %s, %%, %i, and %d.
+       Behavior for NULL string arguments may differ from standard printf.
+       No support for width, precision, or length modifiers.
+
+HISTORY
+       This _printf function was created as a custom implementation for
+       educational purposes by the Holberton/ALX project in 2025.
+
+NOTES
+       Unlike the standard printf, this function does not support float
+       or unsigned conversions, and has limited error handling.
+
+EXAMPLES
+       _printf("Hello %s\n", "world");
+       _printf("Number: %d\n", 42);
+
+AUTHOR
+       -Loïc Cerqueira.
+	   -Virginie Lombarte.
