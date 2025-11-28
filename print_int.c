@@ -31,7 +31,6 @@ int print_int(va_list args)
 		num /= 10;
 	}
 
-
 	while (i > 0)
 	{
 		i--;
