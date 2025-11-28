@@ -39,6 +39,21 @@ DESCRIPTION
        conversion specifiers. Passing incorrect types or missing
        arguments results in undefined behavior.
 
+EXAMPLES
+       Some examples of how to use _printf:
+
+	   _printf("Hello %s\n", "world");
+	   Print "Hello world"
+
+       _printf("Number: %d\n", 42);
+	   Print "Number: 42"
+
+	   _printf("%%");
+	   Print "%"
+
+	   _printf("%c", 'A');
+	   Print "A"
+
 RETURN VALUE
        Upon successful completion, _printf returns the total number of
        characters written to stdout, excluding the terminating null
@@ -55,14 +70,10 @@ ERRORS
        - Unsupported format specifier following '%': behavior may be
          implementation-defined.
 
-
 CONFORMITY
        _printf is a custom implementation inspired by the standard C
        printf function but limited to the format specifiers listed
        above.
-
-LAST UPDATED
-       November 2025
 
 BUGS
        This implementation supports only %c, %s, %%, %i, and %d.
@@ -77,9 +88,11 @@ NOTES
        Unlike the standard printf, this function does not support float
        or unsigned conversions, and has limited error handling.
 
-EXAMPLES
-       _printf("Hello %s\n", "world");
-       _printf("Number: %d\n", 42);
+SEE ALSO
+	   printf(3)
+
+LAST UPDATED
+       November 2025
 
 AUTHOR
        -Loïc Cerqueira.
