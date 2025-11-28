@@ -64,6 +64,7 @@ holbertonschool-printf/
 ├── _putchar.c
 ├── func.c
 ├── main.h
+├── man_3_printf.man
 ├── print_char.c
 ├── print_int.c
 ├── print_percent.c
