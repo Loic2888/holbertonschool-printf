@@ -7,7 +7,7 @@
 int print_int(va_list args)
 {
 	int n = va_arg(args, int);
-	int num = n;
+	unsigned int num;
 	char buffer[20];
 	int i = 0;
 	int count = 0;
@@ -22,7 +22,11 @@ int print_int(va_list args)
 	{
 		_putchar('-');
 		count++;
-		num = -num;
+		num = (unsigned int)(-n);
+	}
+	else
+	{
+		num = (unsigned int)n;
 	}
 
 	while (num > 0)
@@ -30,7 +34,6 @@ int print_int(va_list args)
 		buffer[i++] = (num % 10) + '0';
 		num /= 10;
 	}
-
 
 	while (i > 0)
 	{
