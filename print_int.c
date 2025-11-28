@@ -6,8 +6,8 @@
  */
 int print_int(va_list args)
 {
-	long n = va_arg(args, int);
-	long num = n;
+	int n = va_arg(args, int);
+	int num = n;
 	char buffer[20];
 	int i = 0;
 	int count = 0;
