@@ -105,7 +105,7 @@ holbertonschool-printf/
 
 The complete man page can be found in the file:  
 
-man_3_printf
+[man_3_printf](man_3_printf.man)
 
 
 ---
